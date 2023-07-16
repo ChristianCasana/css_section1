@@ -1,0 +1,77 @@
+/*
+Regla CSS consta de 2 partes
+1) El selector
+2) Bloque de declaraciones {
+  atributo: valor;
+  atributo-de-mas-dos-palabras: otro-valor:
+}
+*/
+
+/* SOn Mala práctica a la hora de que el navegador lee esta instrucción */
+@import url(./other-style.css);
+
+h1 {
+  color: orangered;
+  background-color: black;
+}
+
+/*
+Selectores Básicos
+  1) Etiquetas - son elementos html
+  2) Identificadores - atributo id - #
+  3) Clases - atricuto class - .
+*/
+
+p {
+  color: midnightblue;
+}
+
+/*Dar estilo con ID se considera un atipatrón o mala práctica */
+#parrafo-dos {
+  background-color: skyblue;
+}
+
+/*Dar estilos con clases nos permite reutilizar nuestro código CSS*/
+
+.bg-skyblue {
+  background: skyblue;
+}
+
+.bg-steelblue {
+  background: steelblue;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.test-white {
+  color: white;
+}
+
+.hijos-directos > li {
+  background-color: thistle;
+}
+
+.hijos-descendientes b {
+  background-color: thistle;
+}
+
+/* Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estén por debajo del elemento
+de referencia*/
+.hermanos-general ~ li {
+  background-color: thistle;
+}
+
+.hermanos-adyacentes + li {
+  background-color: thistle;
+}
+
+/* Selectores de atributos */
+.selectores-atributos a[href] {
+  color: orangered;
+}
